@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Login Using Tailwindcss</title>
+    <link rel="stylesheet" href="dist/styles.css" />
+  </head>
+  <body class="w-screen min-h-screen bg-gray-50">
+    <main class="w-full h-full flex flex-col items-center">
+      <div id="header" class="flex flex-col items-center mt-8">
+        <div class="h-12 w-12 mb-6">
+          <img
+            src="../src/assets/github-brands.svg"
+            class="w-full h-full opacity-60"
+          />
+        </div>
+        <h1 class="text-2xl font-light font-sans">Sign in to GitHub</h1>
+      </div>
+
+      <form class="w-80 p-6 mt-4 flex flex-col bg-card-bg rounded-lg border">
+        <label class="flex flex-col text-sm text-gray-800" for="email"
+          >Username or email address
+        </label>
+        <input
+          class="mt-2 mb-4 px-3 py-1 rounded-md border-2 border-gray-200 bg-white focus:border-blue-400"
+          name="email"
+          id="email"
+          type="email"
+        />
+        <label
+          class="flex justify-between items-center text-sm text-gray-800"
+          for="password"
+          >Password<a href="#" class="text-blue-links font-normal text-xs"
+            >Forgot password?</a
+          >
+        </label>
+        <input
+          class="mt-2 mb-4 px-3 py-1 rounded-md border-2 border-gray-200 bg-white focus:border-blue-400"
+          name="password"
+          id="password"
+          type="password"
+        />
+        <button
+          class="w-full py-1.5 bg-primary-green text-sm text-white font-normal rounded-lg active:bg-green-700"
+        >
+          <a href="#">Sign in</a>
+        </button>
+      </form>
+      <div
+        id="new-account"
+        class="w-80 p-4 mt-4 bg-gray-50 rounded-lg border border-gray-300 text-center"
+      >
+        <h3 class="text-gray-800 text-sm">
+          New to GitHub?<a
+            href="#"
+            class="text-blue-links font-normal text-sm hover:underline"
+          >
+            Create an account</a
+          >
+        </h3>
+      </div>
+      <footer class="w-80 justify-evenly mt-16 flex items-center">
+        <a href="#" class="text-blue-links font-normal text-xs hover:underline"
+          >Terms</a
+        >
+        <a href="#" class="text-blue-links font-normal text-xs hover:underline"
+          >Privacy</a
+        >
+        <a href="#" class="text-blue-links font-normal text-xs hover:underline"
+          >Security</a
+        >
+        <a
+          href="#"
+          class="text-gray-500 font-normal text-xs hover:underline hover:text-blue-links"
+          >Contact GitHub</a
+        >
+      </footer>
+    </main>
+  </body>
+</html>
