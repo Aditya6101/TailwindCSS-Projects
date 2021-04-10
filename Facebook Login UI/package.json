@@ -1,0 +1,19 @@
+{
+  "name": "TailwindCSS-Starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss ./src/style.css -o ./public/style.css",
+    "prod": "NODE_ENV=production postcss ./src/style.css -o ./public/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.1",
+    "win-node-env": "^0.4.0"
+  }
+}
